@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXPagination?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPaneLeader" opacity="0.63" prefHeight="530.0" prefWidth="900.0" style="-fx-background-color: lightgreen; -fx-background-radius: 15;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rtmisq.LeaderTabController">
+   <children>
+      <HBox layoutX="166.0" layoutY="54.0" prefHeight="387.0" prefWidth="588.0">
+         <children>
+            <VBox prefHeight="430.0" prefWidth="38.0">
+               <opaqueInsets>
+                  <Insets bottom="10.0" />
+               </opaqueInsets>
+               <children>
+                  <AnchorPane prefHeight="45.0" prefWidth="376.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label fx:id="N1" alignment="CENTER" prefHeight="44.0" prefWidth="38.0" text="1">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="45.0" prefWidth="376.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label fx:id="N2" alignment="CENTER" prefHeight="44.0" prefWidth="38.0" text="2">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="45.0" prefWidth="376.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label fx:id="N3" alignment="CENTER" prefHeight="44.0" prefWidth="38.0" text="3">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="45.0" prefWidth="376.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label fx:id="N4" alignment="CENTER" prefHeight="44.0" prefWidth="38.0" text="4">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="45.0" prefWidth="376.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label fx:id="N5" alignment="CENTER" prefHeight="44.0" prefWidth="38.0" text="5">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="45.0" prefWidth="376.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label fx:id="N6" alignment="CENTER" prefHeight="44.0" prefWidth="38.0" text="6">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="45.0" prefWidth="376.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label fx:id="N7" alignment="CENTER" prefHeight="44.0" prefWidth="38.0" text="7">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox prefHeight="430.0" prefWidth="406.0">
+               <opaqueInsets>
+                  <Insets bottom="10.0" />
+               </opaqueInsets>
+               <children>
+                  <AnchorPane prefHeight="45.0" prefWidth="376.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label fx:id="P1" prefHeight="25.0" prefWidth="225.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="46.0" prefWidth="366.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label fx:id="P2" prefHeight="25.0" prefWidth="225.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="45.0" prefWidth="376.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label fx:id="P3" prefHeight="25.0" prefWidth="225.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="45.0" prefWidth="376.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label fx:id="P4" prefHeight="25.0" prefWidth="225.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="45.0" prefWidth="376.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label fx:id="P5" prefHeight="25.0" prefWidth="225.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="45.0" prefWidth="376.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label fx:id="P6" prefHeight="25.0" prefWidth="225.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="45.0" prefWidth="376.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label fx:id="P7" prefHeight="25.0" prefWidth="225.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <VBox prefHeight="430.0" prefWidth="60.0">
+               <opaqueInsets>
+                  <Insets bottom="10.0" />
+               </opaqueInsets>
+               <children>
+                  <AnchorPane prefHeight="45.0" prefWidth="376.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label fx:id="M1" alignment="CENTER" prefHeight="44.0" prefWidth="60.0" text="-">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="45.0" prefWidth="376.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label fx:id="M2" alignment="CENTER" prefHeight="44.0" prefWidth="60.0" text="-">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="45.0" prefWidth="376.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label fx:id="M3" alignment="CENTER" prefHeight="44.0" prefWidth="60.0" text="-">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="45.0" prefWidth="376.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label fx:id="M4" alignment="CENTER" prefHeight="44.0" prefWidth="60.0" text="-">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="45.0" prefWidth="376.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label fx:id="M5" alignment="CENTER" prefHeight="44.0" prefWidth="60.0" text="-">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="45.0" prefWidth="376.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label fx:id="M6" alignment="CENTER" prefHeight="44.0" prefWidth="60.0" text="-">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="45.0" prefWidth="376.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label fx:id="M7" alignment="CENTER" prefHeight="44.0" prefWidth="60.0" text="-">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+      <MFXPagination fx:id="mfxPagination" currentPage="0" ellipseString="uii" layoutX="166.0" layoutY="451.0" maxPage="7" prefHeight="32.0" prefWidth="527.0" showPopupForTruncatedPages="true" />
+      <Pane prefHeight="80.0" prefWidth="80.0">
+         <children>
+            <ImageView fx:id="PaneBack" fitHeight="80.0" fitWidth="80.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#backToHome" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@HomePage/play.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

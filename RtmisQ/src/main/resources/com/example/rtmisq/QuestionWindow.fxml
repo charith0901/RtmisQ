@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rtmisq.QuestionWindowController">
+   <center>
+      <AnchorPane>
+         <children>
+            <AnchorPane fx:id="BaseAnchorPane" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #d7fedc;" stylesheets="@css/GameWindow.css">
+               <children>
+                  <ImageView fitHeight="492.0" fitWidth="730.0" layoutX="64.0" layoutY="38.0" opacity="0.2">
+                     <image>
+                        <Image url="@QuestionWindowImages/questionWindowBgImage.jpeg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="51.0" fitWidth="118.0" layoutX="735.0" layoutY="14.0">
+                     <image>
+                        <Image url="@QuestionWindowImages/RtmisQ.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="447.0" fitWidth="479.0" layoutX="164.0" layoutY="56.0" opacity="0.06" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@QuestionWindowImages/butt1.gif" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane layoutY="116.0" opacity="0.44" prefHeight="164.0" prefWidth="893.0" style="-fx-background-color: #d7fc8f; -fx-border-style: segments(10, 15, 15, 15)  line-cap round;" />
+                  <TextArea fx:id="QuestionText" editable="false" layoutX="2.0" layoutY="105.0" prefHeight="179.0" prefWidth="891.0" style="-fx-background-color: none;" text="What is the process by which green plants and some other organisms use sunlight to synthesize foods with the help of chlorophyll?" wrapText="true">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </TextArea>
+                  <Label fx:id="QuestionLabel" alignment="CENTER" layoutX="211.0" layoutY="43.0" prefHeight="26.0" prefWidth="498.0" styleClass="fantasy-text-title" text="Question 01" textAlignment="CENTER" textFill="#117211">
+                     <font>
+                        <Font name="Avenir Black" size="34.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="53.0" layoutY="319.0" prefHeight="147.0" prefWidth="815.0">
+                     <children>
+                        <Label layoutX="-24.0" layoutY="21.0" prefHeight="37.0" prefWidth="52.0" text="(01)">
+                           <font>
+                              <Font name="Arial Black" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="-26.0" layoutY="102.0" prefHeight="37.0" prefWidth="52.0" text="(03)">
+                           <font>
+                              <Font name="Arial Black" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="474.0" layoutY="14.0" prefHeight="37.0" prefWidth="52.0" text="(02)">
+                           <font>
+                              <Font name="Arial Black" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="471.0" layoutY="102.0" prefHeight="37.0" prefWidth="52.0" text="(04)">
+                           <font>
+                              <Font name="Arial Black" size="24.0" />
+                           </font>
+                        </Label>
+                        <RadioButton fx:id="Ans1" layoutX="38.0" layoutY="23.0" mnemonicParsing="false" text="Answer 1">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="25.0" />
+                           </font>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="Answers" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="Ans3" layoutX="38.0" layoutY="102.0" mnemonicParsing="false" text="Answer 3" toggleGroup="$Answers">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="25.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="Ans2" layoutX="533.0" layoutY="10.0" mnemonicParsing="false" text="Answer 2" toggleGroup="$Answers">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="25.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="Ans4" layoutX="533.0" layoutY="102.0" mnemonicParsing="false" text="Answer 4" toggleGroup="$Answers">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="25.0" />
+                           </font>
+                        </RadioButton>
+                     </children>
+                  </Pane>
+                  <ImageView fitHeight="173.0" fitWidth="249.0" layoutX="94.0" layoutY="470.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="115.0" fitWidth="107.0" layoutX="290.0" layoutY="495.0" opacity="0.41">
+                     <image>
+                        <Image url="@QuestionWindowImages/parrot.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="btnSubmit" fitHeight="119.0" fitWidth="137.0" layoutX="398.0" layoutY="482.0" onMouseClicked="#submit" pickOnBounds="true" preserveRatio="true" styleClass="imageView">
+                     <image>
+                        <Image url="@QuestionWindowImages/apple1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="DescriptionAnchor" layoutY="470.0" prefHeight="168.0" prefWidth="890.0" style="-fx-background-color: lightgreen;" visible="false">
+               <children>
+                  <TextArea fx:id="DescriptionTxt" editable="false" layoutX="-3.0" prefHeight="168.0" prefWidth="893.0" text="What is the process by which green plants and some other organisms use sunlight to synthesize foods with the help of chlorophyll?" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextArea>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="ResultAnchorPane" layoutX="180.0" layoutY="30.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.98" prefHeight="440.0" prefWidth="562.0" visible="false">
+               <children>
+                  <ImageView fitHeight="439.0" fitWidth="674.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Alert/Alert.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="celebrateIMG" fitHeight="288.0" fitWidth="435.0" layoutX="61.0" layoutY="112.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@QuestionWindowImages/vic1.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="ShineIMG" fitHeight="288.0" fitWidth="435.0" layoutX="55.0" layoutY="117.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@QuestionWindowImages/vic2.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="ResultIMG" fitHeight="272.0" fitWidth="311.0" layoutX="137.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@QuestionWindowImages/victory.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="HomeBtn" layoutX="201.0" layoutY="309.0" mnemonicParsing="false" onAction="#setAction">
+                     <graphic>
+                        <ImageView fitHeight="88.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@QuestionWindowImages/home.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="LookBackBtn" layoutX="310.0" layoutY="315.0" mnemonicParsing="false" onAction="#setAction">
+                     <graphic>
+                        <ImageView fitHeight="88.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@QuestionWindowImages/view.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="BackBtn" layoutX="95.0" layoutY="309.0" mnemonicParsing="false" onAction="#setAction">
+                     <graphic>
+                        <ImageView fitHeight="88.0" fitWidth="44.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@QuestionWindowImages/exit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="NextBtn" layoutX="405.0" layoutY="314.0" mnemonicParsing="false" onAction="#setAction">
+                     <graphic>
+                        <ImageView fitHeight="88.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@QuestionWindowImages/next.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <ToolBar fx:id="toolbarL" nodeOrientation="RIGHT_TO_LEFT" prefHeight="30.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+         <items>
+            <ImageView fitHeight="20.0" fitWidth="31.0" onMouseClicked="#closewindow" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/close.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="25.0" onMouseClicked="#minimizewindow" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/minimize.png" />
+               </image>
+            </ImageView>
+         </items>
+      </ToolBar>
+   </top>
+</BorderPane>

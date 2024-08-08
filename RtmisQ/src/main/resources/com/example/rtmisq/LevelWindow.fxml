@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rtmisq.LevelWindowController">
+   <center>
+      <AnchorPane fx:id="levelWindowPane" prefHeight="600.0" prefWidth="900.0" stylesheets="@css/GameWindow.css">
+         <children>
+            <ImageView fx:id="bgImage" fitHeight="510.0" fitWidth="711.0" layoutX="201.0" layoutY="45.0" opacity="0.73" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@HomePage/birds.jfif" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnlevel1Image" fitHeight="600.0" fitWidth="900.0" layoutX="-2.0" layoutY="-4.0" opacity="0.16">
+               <image>
+                  <Image url="@levelWindowImages/levelWindowBgImage.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="141.0" fitWidth="146.0" layoutY="452.0" opacity="0.82" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@level1WindowImages/parrot.gif" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="384.0" fitWidth="306.0" layoutX="3.0" layoutY="263.0" opacity="0.07" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@level1WindowImages/butt1.gif" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnBack" fitHeight="154.0" fitWidth="97.0" layoutX="89.0" layoutY="405.0" onMouseClicked="#backBtnOnAction" pickOnBounds="true" preserveRatio="true" styleClass="imageView">
+               <image>
+                  <Image url="@level1WindowImages/backBtnImage.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnLevel4" fitHeight="200.0" fitWidth="200.0" layoutX="660.0" layoutY="271.0" onMouseClicked="#btnLevelAction">
+               <image>
+                  <Image url="@levelWindowImages/level4Image.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnLevel2" fitHeight="200.0" fitWidth="200.0" layoutX="249.0" layoutY="252.0" onMouseClicked="#btnLevelAction">
+               <image>
+                  <Image url="@levelWindowImages/level2Image.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnLevel1" fitHeight="200.0" fitWidth="200.0" layoutX="41.0" layoutY="38.0" onMouseClicked="#btnLevelAction">
+               <image>
+                  <Image url="@levelWindowImages/level1Image.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnLevel3" fitHeight="200.0" fitWidth="200.0" layoutX="470.0" layoutY="81.0" onMouseClicked="#btnLevelAction">
+               <image>
+                  <Image url="@levelWindowImages/level3Image.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="CategoryLabel" alignment="CENTER" layoutX="261.0" layoutY="9.0" prefHeight="29.0" prefWidth="395.0" styleClass="fantasy-text-title" text="Label">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <ToolBar fx:id="toolbarL" nodeOrientation="RIGHT_TO_LEFT" prefHeight="30.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+         <items>
+            <ImageView fitHeight="20.0" fitWidth="31.0" onMouseClicked="#closewindow" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/close.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="25.0" onMouseClicked="#minimizewindow" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/minimize.png" />
+               </image>
+            </ImageView>
+         </items>
+      </ToolBar>
+   </top>
+</BorderPane>

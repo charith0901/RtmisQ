@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXProgressSpinner?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPaneHome" prefHeight="530.0" prefWidth="900.0" scaleShape="false" stylesheets="@css/GameWindow.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rtmisq.HomeTabController">
+   <children>
+      <AnchorPane layoutX="16.0" layoutY="13.0" opacity="0.75" prefHeight="446.0" prefWidth="213.0" style="-fx-background-color: #a6f1a6; -fx-background-radius: 15;" />
+      <VBox focusTraversable="true" layoutX="13.0" layoutY="13.0" mouseTransparent="true" prefHeight="446.0" prefWidth="214.0">
+         <children>
+            <MFXProgressSpinner fx:id="mfxProgressSpinnerCompleted" prefHeight="87.0" prefWidth="214.0" progress="0.66" startingAngle="270.0">
+               <color4>
+                  <Color red="0.0451388880610466" green="0.09974110871553421" blue="0.5131579041481018" />
+               </color4>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </MFXProgressSpinner>
+            <Label fx:id="Completed" alignment="CENTER" contentDisplay="CENTER" prefHeight="42.0" prefWidth="234.0" styleClass="fantasy-text" text="Completed">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <MFXProgressSpinner fx:id="mfxProgressSpinnerSuccess" prefHeight="86.0" prefWidth="214.0" progress="0.71" startingAngle="270.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </MFXProgressSpinner>
+            <Label fx:id="SuccessRate" alignment="CENTER" contentDisplay="CENTER" prefHeight="42.0" prefWidth="234.0" styleClass="fantasy-text" text="Success Rate">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="hrs" alignment="CENTER_RIGHT" prefHeight="54.0" prefWidth="235.0" text="Hrs">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="mins" alignment="CENTER_RIGHT" prefHeight="54.0" prefWidth="232.0" text="Mins">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="ScreenTime" alignment="CENTER" contentDisplay="CENTER" prefHeight="42.0" prefWidth="231.0" styleClass="fantasy-text" text="Screen Time" />
+         </children>
+      </VBox>
+      <Pane fx:id="PaneSetting" layoutX="816.0" onMouseClicked="#ButtonEvent" prefHeight="85.0" prefWidth="84.0" />
+      <Pane fx:id="paneLeader" layoutX="237.0" layoutY="437.0" onMouseClicked="#ButtonEvent" prefHeight="78.0" prefWidth="79.0">
+         <children>
+            <ImageView fitHeight="84.0" fitWidth="104.0" pickOnBounds="true" preserveRatio="true" styleClass="imageView">
+               <image>
+                  <Image url="@HomePage/cup.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane fx:id="tempbtn" layoutX="237.0" layoutY="14.0" prefHeight="40.0" prefWidth="57.0" />
+      <Pane fx:id="paneLearn" layoutX="676.0" layoutY="383.0" onMouseClicked="#ButtonEvent" prefHeight="123.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" styleClass="imageView">
+               <image>
+                  <Image url="@HomePage/Learn.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="learnLabel" alignment="TOP_CENTER" layoutX="33.0" layoutY="100.0" prefHeight="18.0" prefWidth="134.0" styleClass="fantasy-text-title" text="Learn" textAlignment="CENTER" />
+         </children></Pane>
+      <Pane fx:id="paneGame" layoutX="369.0" layoutY="73.0" onMouseClicked="#ButtonEvent" prefHeight="298.0" prefWidth="300.0">
+         <children>
+            <ImageView fitHeight="292.0" fitWidth="321.0" layoutX="4.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@HomePage/play.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="playLabel" alignment="TOP_CENTER" layoutX="73.0" layoutY="266.0" prefHeight="18.0" prefWidth="141.0" styleClass="fantasy-text-title" text="Start" textAlignment="CENTER" />
+         </children></Pane>
+      <ImageView fitHeight="85.0" fitWidth="105.0" layoutX="762.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true" styleClass="imageView">
+         <image>
+            <Image url="@HomePage/setting.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

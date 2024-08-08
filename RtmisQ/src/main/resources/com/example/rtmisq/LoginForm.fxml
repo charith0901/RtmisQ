@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXPasswordField?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane style="-fx-background-radius: 50; -fx-background-color: transparent;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rtmisq.LoginFormController">
+   <center>
+      <AnchorPane fx:id="context" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;">
+         <children>
+            <AnchorPane layoutX="-1.0" layoutY="-1.0" prefHeight="403.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to right, #6eff8e, white);">
+               <children>
+                  <MFXTextField fx:id="txtUserName" floatMode="BORDER" floatingText="Username" layoutX="20.0" layoutY="120.0" prefHeight="38.0" prefWidth="286.0" />
+                  <MFXPasswordField fx:id="txtPassword" allowCopy="true" allowCut="true" allowPaste="true" floatMode="BORDER" floatingText="Password" hideCharacter="*" layoutX="21.0" layoutY="173.0" prefHeight="38.0" prefWidth="284.0" />
+                  <Hyperlink layoutX="207.0" layoutY="211.0" onAction="#frogotPasswordOnAction" text="Forgot password?" underline="true" />
+                  <MFXButton layoutX="72.0" layoutY="248.0" onAction="#loginOnAction" prefHeight="26.0" prefWidth="184.0" text="Login" />
+                  <Label layoutX="154.0" layoutY="293.0" text="OR" textFill="#029e0f">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <MFXButton layoutX="72.0" layoutY="325.0" onAction="#createAnAccountOnAction" prefHeight="26.0" prefWidth="186.0" text="Create Account" />
+               </children></AnchorPane>
+            <ImageView fitHeight="206.0" fitWidth="201.0" layoutX="378.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/Unlock.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="70.0" fitWidth="121.0" layoutX="408.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/Login_img.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="84.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@HomePage/logo.png" />
+               </image>
+            </ImageView>
+            <Separator layoutX="326.0" layoutY="40.0" orientation="VERTICAL" prefHeight="315.0" prefWidth="21.0" />
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <ToolBar fx:id="toolbarL" nodeOrientation="RIGHT_TO_LEFT" prefHeight="24.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to left, #6eff8e, white);" BorderPane.alignment="CENTER">
+         <items>
+            <ImageView fitHeight="20.0" fitWidth="31.0" onMouseClicked="#closewindow" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/close.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="25.0" onMouseClicked="#minimizewindow" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/minimize.png" />
+               </image>
+            </ImageView>
+         </items>
+      </ToolBar>
+   </top>
+</BorderPane>

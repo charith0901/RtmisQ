@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.93" prefHeight="408.0" prefWidth="524.0" style="-fx-background-color: transparent;" stylesheets="@css/GameWindow.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rtmisq.AlterPopController">
+   <children>
+      <ImageView fitHeight="410.0" fitWidth="561.0" layoutX="-4.0" layoutY="-1.0" opacity="0.77" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Alert/Alert.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="216.0" layoutY="120.0" prefHeight="42.0" prefWidth="86.0" text="Alert" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="395.0" layoutY="311.0" text="RtmisQ" />
+      <ImageView fx:id="YesBtn" fitHeight="60.0" fitWidth="60.0" layoutX="323.0" layoutY="309.0" onMouseClicked="#YesConfirm" pickOnBounds="true" preserveRatio="true" styleClass="imageView">
+         <image>
+            <Image url="@Alert/yes.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="NoBtn" fitHeight="60.0" fitWidth="60.0" layoutX="136.0" layoutY="309.0" onMouseClicked="#NoConfirm" pickOnBounds="true" preserveRatio="true" styleClass="imageView">
+         <image>
+            <Image url="@Alert/no.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="CloseBtn" fitHeight="80.0" fitWidth="118.0" layoutX="199.0" layoutY="299.0" onMouseClicked="#CloseConfirm" pickOnBounds="true" preserveRatio="true" styleClass="imageView">
+         <image>
+            <Image url="@Alert/closeBtn.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="94.0" fitWidth="86.0" layoutX="78.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Alert/girl.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="181.0" fitWidth="446.0" layoutX="39.0" layoutY="121.0" nodeOrientation="RIGHT_TO_LEFT" opacity="0.42" pickOnBounds="true">
+         <image>
+            <Image url="@Alert/cloud.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="WarningText" layoutX="154.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="196.00008544921877">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+   </children>
+</AnchorPane>

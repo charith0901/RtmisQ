@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXNotificationCenter?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane stylesheets="@css/GameWindow.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rtmisq.HomePageController">
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#JustClickBackground" prefHeight="600.0" prefWidth="900.0">
+         <children>
+            <ImageView fx:id="background" fitHeight="600.0" fitWidth="900.0" opacity="0.76" pickOnBounds="true">
+               <image>
+                  <Image url="@HomePage/background.jpg" />
+               </image>
+            </ImageView>
+      
+            <ImageView fx:id="leaves" fitHeight="638.0" fitWidth="817.0" layoutX="110.0" layoutY="121.0" opacity="0.65" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@HomePage/Leaves.png" />
+               </image>
+            </ImageView>
+            <AnchorPane fx:id="CurrentAnchorPane" layoutX="-4.0" layoutY="67.0" prefHeight="530.0" prefWidth="900.0" />
+            <MFXButton fx:id="Threeline" graphicTextGap="0.0" layoutX="833.0" layoutY="24.0" onAction="#HamburgerMenu" prefHeight="37.0" prefWidth="44.0" text="≡" textAlignment="JUSTIFY">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </MFXButton>
+            <VBox fx:id="vBoxMenu" layoutX="785.0" layoutY="66.0" prefHeight="128.0" prefWidth="114.0" visible="false">
+               <children>
+                  <MFXButton fx:id="Account" prefHeight="25.0" prefWidth="126.0" text="Account" />
+                  <MFXButton fx:id="Settings" prefHeight="25.0" prefWidth="127.0" text="Setting" />
+                  <MFXButton fx:id="Help" prefHeight="25.0" prefWidth="130.0" text="Help" />
+                  <MFXButton fx:id="About" onAction="#aboutFunction" prefHeight="25.0" prefWidth="126.0" text="About" />
+                  <MFXButton fx:id="Logout" onAction="#Logout" prefHeight="25.0" prefWidth="124.0" text="Logout" />
+               </children>
+            </VBox>
+            <MFXNotificationCenter fx:id="NotificationCenter" layoutX="773.0" layoutY="15.0" maxHeight="32.0" maxWidth="32.0" prefHeight="32.0" prefWidth="32.0" scaleX="0.75" scaleY="0.75" selectionMode="true" />
+            <ImageView fitHeight="90.0" fitWidth="99.0" layoutX="11.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@HomePage/logo.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="welcomeLabel" alignment="CENTER" layoutX="148.0" layoutY="11.0" prefHeight="51.0" prefWidth="550.0" styleClass="fantasy-text-title" text="Welcome_Error" />
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <ToolBar fx:id="toolbarL" nodeOrientation="RIGHT_TO_LEFT" prefHeight="30.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+         <items>
+            <ImageView fitHeight="20.0" fitWidth="31.0" onMouseClicked="#closewindow" pickOnBounds="true" preserveRatio="true" styleClass="rotateImg">
+               <image>
+                  <Image url="@assets/close.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="25.0" onMouseClicked="#minimizewindow" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/minimize.png" />
+               </image>
+            </ImageView>
+         </items>
+      </ToolBar>
+   </top>
+</BorderPane>

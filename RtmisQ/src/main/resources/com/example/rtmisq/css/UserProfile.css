@@ -1,0 +1,33 @@
+.primary-color{
+    -fx-background-color: #E6F3E3;
+}
+
+.secondary-color{
+    -fx-background-color: #FFFFFF;
+}
+
+.button{
+    -fx-background-color: #69BC59;
+    -fx-background-radius: 30;
+}
+
+.text-input{
+    -fx-background-color: rgba(0,0,0,0);
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #242551;
+    -fx-text-inner-color: #000;
+}
+
+.selected-border{
+    -fx-border-color: #000;
+    -fx-border-width: 0 3 0 0;
+}
+
+.selected:hover{
+    -fx-background-color: #B4D653;
+}
+
+.profile-picture-button {
+    -fx-background-color: #fff;
+    -fx-background-radius: 30;
+}

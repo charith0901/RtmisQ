@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPaneGame" onKeyPressed="#handleKeyPress" prefHeight="530.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rtmisq.GameTabController">
+   <children>
+      <MFXButton fx:id="continuebtn" layoutX="204.0" layoutY="464.0" onAction="#StartGame" prefHeight="38.0" prefWidth="474.0" style="-fx-background-color: lightblue;" text="Click here to continue to Game">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </MFXButton>
+      <Label fx:id="gameName" alignment="CENTER" layoutX="358.0" layoutY="410.0" prefHeight="38.0" prefWidth="166.0" style="-fx-background-color: orange; -fx-background-radius: 15;" text="Game_Name" textFill="#0aef43">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="rightarrow" fitHeight="116.0" fitWidth="149.0" layoutX="750.0" layoutY="220.0" onMouseClicked="#nextImage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@HomePage/arrow.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="leftarrow" fitHeight="80.0" fitWidth="149.0" layoutY="220.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#previousImage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@HomePage/arrow.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gameImage1" fitHeight="239.0" fitWidth="241.0" layoutX="450.0" layoutY="120.0" onSwipeLeft="#previousImage" onSwipeRight="#nextImage" opacity="0.99" pickOnBounds="true" rotate="-40.0" smooth="false">
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" />
+         </effect>
+         <rotationAxis>
+            <Point3D y="1.0" />
+         </rotationAxis>
+      </ImageView>
+      <ImageView fx:id="gameImage2" fitHeight="239.0" fitWidth="241.0" layoutX="200.0" layoutY="120.0" onSwipeLeft="#previousImage" onSwipeRight="#nextImage" opacity="0.99" pickOnBounds="true" rotate="40.0" smooth="false">
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" />
+         </effect>
+         <rotationAxis>
+            <Point3D y="1.0" />
+         </rotationAxis>
+      </ImageView>
+      <ImageView fx:id="gameImage" fitHeight="300.0" fitWidth="300.0" layoutX="304.0" layoutY="95.0" onSwipeLeft="#previousImage" onSwipeRight="#nextImage" opacity="0.99" pickOnBounds="true" smooth="false">
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" />
+         </effect>
+      </ImageView>
+      <Pane layoutX="10.0" layoutY="10.0" prefHeight="80.0" prefWidth="80.0">
+         <children>
+            <ImageView fx:id="PaneBack" fitHeight="80.0" fitWidth="80.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#backToHome" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@HomePage/play.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

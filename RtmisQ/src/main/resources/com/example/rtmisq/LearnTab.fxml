@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPaneLearn" prefHeight="530.0" prefWidth="900.0" stylesheets="@css/GameWindow.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rtmisq.LearnTabController">
+   <children>
+      <MFXButton layoutX="358.0" layoutY="388.0" prefHeight="37.0" prefWidth="206.0" style="-fx-background-color: lightblue;" text="Continue To Learn">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </MFXButton>
+      <Pane layoutX="10.0" layoutY="10.0" prefHeight="80.0" prefWidth="80.0">
+         <children>
+            <ImageView fx:id="PaneBack" fitHeight="80.0" fitWidth="80.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#backToHome" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@HomePage/play.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Text layoutX="146.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: red;" styleClass="fantasy-text-title" text="WE ARE CURRENTLY BUILDING THIS SECTION" wrappingWidth="630.1366577148438" />
+   </children>
+</AnchorPane>

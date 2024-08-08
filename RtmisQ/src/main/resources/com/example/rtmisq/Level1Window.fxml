@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rtmisq.Level1WindowController">
+   <center>
+      <AnchorPane fx:id="level1WindowPane" opacity="0.98" prefHeight="584.0" prefWidth="900.0" style="-fx-background-color: #000000;" stylesheets="@css/GameWindow.css">
+         <children>
+            <ImageView fitHeight="600.0" fitWidth="907.0" opacity="0.33" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@level1WindowImages/level1WindowBgImage.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="134.0" fitWidth="119.0" layoutY="474.0" opacity="0.43" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@level1WindowImages/parrot.gif" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="150.0" fitWidth="148.0" layoutX="30.0" layoutY="84.0" opacity="0.04" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@level1WindowImages/butt1.gif" />
+               </image>
+            </ImageView>
+            <Pane id="ButtonPane" fx:id="buttonPane" accessibleText="sfs" layoutX="128.0" layoutY="51.0" prefHeight="492.0" prefWidth="668.0">
+               <children>
+                  <GridPane alignment="CENTER" layoutX="46.0" layoutY="26.0" prefHeight="436.0" prefWidth="602.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                       <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <ImageView fx:id="btn1Image" fitHeight="140.0" fitWidth="147.0" onMouseClicked="#Btn1OnAction">
+                           <image>
+                              <Image url="@level1WindowImages/level1Q1BtnImage.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="btn2Image" fitHeight="140.0" fitWidth="140.0" onMouseClicked="#Btn1OnAction" GridPane.columnIndex="1">
+                           <image>
+                              <Image url="@level1WindowImages/level1Q2BtnImage.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="btn3Image" fitHeight="140.0" fitWidth="140.0" onMouseClicked="#Btn1OnAction" GridPane.columnIndex="2">
+                           <image>
+                              <Image url="@level1WindowImages/level1Q3BtnImage.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="btn4Image" fitHeight="140.0" fitWidth="140.0" onMouseClicked="#Btn1OnAction" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@level1WindowImages/level1Q4BtnImage.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="btn5Image" fitHeight="140.0" fitWidth="140.0" onMouseClicked="#Btn1OnAction" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@level1WindowImages/level1Q5BtnImage.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="btn6Image" fitHeight="140.0" fitWidth="140.0" onMouseClicked="#Btn1OnAction" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@level1WindowImages/level1Q6BtnImage.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="btn7Image" fitHeight="140.0" fitWidth="140.0" onMouseClicked="#Btn1OnAction" GridPane.rowIndex="2">
+                           <image>
+                              <Image url="@level1WindowImages/level1Q7BtnImage.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="btn8Image" fitHeight="140.0" fitWidth="140.0" onMouseClicked="#Btn1OnAction" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <image>
+                              <Image url="@level1WindowImages/level1Q8BtnImage.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="btn9Image" fitHeight="140.0" fitWidth="140.0" onMouseClicked="#Btn1OnAction" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <image>
+                              <Image url="@level1WindowImages/level1Q9BtnImage.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+               </children>
+            </Pane>
+            <Label fx:id="levelLabel" alignment="CENTER" layoutX="227.0" layoutY="14.0" prefHeight="44.0" prefWidth="415.0" style="-fx-background-color: lightblue;" styleClass="fantasy-text-title" text="Level 1" textFill="DARKGREEN">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <ImageView disable="true" fitHeight="141.0" fitWidth="173.0" layoutX="727.0" layoutY="454.0" opacity="0.36" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@level1WindowImages/deer.gif" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="106.0" fitWidth="164.0" layoutY="308.0" opacity="0.59" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@level1WindowImages/tiger.gif" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnBackImage" fitHeight="138.0" fitWidth="92.0" layoutX="73.0" layoutY="428.0" onMouseClicked="#backBtnOnAction" styleClass="imageView">
+               <image>
+                  <Image url="@level1WindowImages/backBtnImage.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="126.0" layoutY="566.0" opacity="0.52" prefHeight="26.0" prefWidth="672.0" style="-fx-background-color: red;" styleClass="fantasy-text-title" text="ONCE YOU ENTER THE QUESTION YOU CANNOT EXIT" textFill="#c92d2d" />
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <ToolBar fx:id="toolbarL" nodeOrientation="RIGHT_TO_LEFT" prefHeight="30.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+         <items>
+            <ImageView fitHeight="20.0" fitWidth="31.0" onMouseClicked="#closewindow" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/close.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="25.0" onMouseClicked="#minimizewindow" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/minimize.png" />
+               </image>
+            </ImageView>
+         </items>
+      </ToolBar>
+   </top>
+</BorderPane>

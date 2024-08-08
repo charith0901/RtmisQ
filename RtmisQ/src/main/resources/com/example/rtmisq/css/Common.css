@@ -1,0 +1,25 @@
+/* Stylesheet for the Wildlife Quiz Application ToolBar */
+
+/* Customize the overall appearance of the ToolBar */
+.tool-bar {
+    -fx-background-color: #6eff8e;
+}
+
+/* Customize the appearance of the child nodes in the ToolBar */
+/*.tool-bar > * {*/
+/*    -fx-font-size: 14px; !* Set font size for all child nodes *!*/
+/*    -fx-text-fill: white; !* Set text color for all child nodes *!*/
+/*    -fx-padding: 5 10; !* Add padding to all child nodes *!*/
+/*}*/
+
+/*!* Customize the hover effect for child nodes *!*/
+/*.tool-bar > *:hover {*/
+/*    -fx-background-color: #689F38; !* Set hover background color *!*/
+/*}*/
+
+/*!* Customize the appearance of the ToolBar title or label *!*/
+/*.tool-bar .label {*/
+/*    -fx-font-size: 18px; !* Set label font size *!*/
+/*}*/
+
+/* Customize any other specific elements within the ToolBar */
